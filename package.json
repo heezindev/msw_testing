@@ -1,0 +1,52 @@
+{
+  "name": "msw_testing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.7",
+    "jest": "^29.7.0",
+    "msw": "^2.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "undici": "^5.28.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": " react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\" -- --config=jest.config.js",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "eslint-plugin-jest-dom": "^5.1.0",
+    "eslint-plugin-testing-library": "^6.2.0",
+    "identity-obj-proxy": "^3.0.0"
+  }
+}
