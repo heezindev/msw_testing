@@ -110,6 +110,7 @@ function App() {
       ) : (
         <p>... 로딩중</p>
       )}
+      <h3>ID 입력시 해당 ID 수정 미입력시 추가</h3>
       <div className="form">
         <form
           onSubmit={id ? (e) => handleUpdateSubmit(e, id) : handleCreateSubmit}
